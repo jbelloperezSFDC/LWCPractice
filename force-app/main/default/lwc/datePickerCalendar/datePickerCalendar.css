@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 14.5px;
+}
+
+.bold {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.link {
+    color: #C8102E;
+    border: 0;
+    background-color: white;
+}
+
+.dates {
+    width: 400px;
+    border: 0.5px solid #D2D1D1;
+    border-radius: 0.8rem;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.dates ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 364px;
+    margin: 0 auto;
+}
+
+.dates .datePickerHolder {
+    flex-wrap: wrap;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    min-height: 50px;
+    margin: 1px;
+}
+
+.buttonContainer {
+    width: 364px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+}
+
+.prev,
+.next {
+    border: none;
+    width: 70px;
+    background-color: white;
+}
+
+.prev:hover,
+.next:hover,
+.link:hover {
+    cursor: pointer;
+}
+
+.prev:before {
+    content: '←';
+    padding-right: 4px;
+}
+
+.next:after {
+    content: '→';
+    padding-left: 4px;
+}
+
+.datePickerHolder li {
+    color: black;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.header li {
+    background-color: white;
+    color: black;
+}
+
+.datePickerHolder li:hover {
+    background-color: #9265D3;
+    color: #FDF1EF;
+}
+
+.datePickerHolder .padder {
+    color: #A4A4A3;
+}
+
+.datePickerHolder .today {
+    background-color: #FDF1EF;
+    color: #C8102E;
+}
+
+.datePickerHolder .selected {
+    background-color: #9265D3;
+    color: #FDF1EF;
+}
+
+.datePickerHolder .holiday {
+    background-color: #298540;
+    color: #FDF1EF;
+}
+
+.datePickerHolder .ooo {
+    background-color: #5E0D16;
+    color: #FDF1EF;
+}
+
+.datePickerHolder .osd {
+    background-color: #2E1166;
+    color: #FDF1EF;
+}
+
+.oooLabel {
+    background-color: #5E0D16;
+    color: #FDF1EF;
+    border-radius: 10px;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.holidayLabel {
+    background-color: #298540;
+    color: #FDF1EF;
+    border-radius: 10px;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.osdLabel {
+    background-color:#2E1166;
+    color: #FDF1EF;
+    border-radius: 10px;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.legend {
+    margin: 3px 10px 8px 10px;
+}
+
+.past {
+    color: #D2D1D1 !important;
+}

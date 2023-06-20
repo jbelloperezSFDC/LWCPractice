@@ -1,0 +1,50 @@
+<template>
+  <div>
+    <div class="slds-grid">
+      <h3 class="slds-form-element__legend slds-form-element__label">
+        {header}
+      </h3>
+    </div>
+    <div class="slds-grid">
+      <div class="slds-col slds-var-p-horizontal_medium slds-is-relative date">
+        <lightning-icon class="chevron-down" icon-name="utility:down" size="xx-small" title="Date"></lightning-icon>
+        <lightning-input
+          label="Date"
+          placeholder="Select Date"
+          value={dateVal}
+          onclick={showCalendar}>
+        </lightning-input>
+      </div>
+      <lightning-combobox
+        class="slds-col slds-var-p-horizontal_medium time"
+        name="Time"
+        label="Time"
+        placeholder="Select Time"
+        value={timeVal}
+        options={timeOptions}
+        onchange={handleTimeChange}
+        disabled={timeDisabled}>
+      </lightning-combobox>
+    </div>
+    <div class="calendar">
+      <template if:true={calendarVisible}>
+        <c-date-picker-calendar
+          parent-date={dateVal}
+          ondateselected={handleSelectedDate}>
+        </c-date-picker-calendar>
+      </template>
+    </div>
+    <div class="slds-grid">
+      <template if:false={intervalHidden}>
+        <lightning-combobox
+          class="slds-col slds-var-p-horizontal_medium duration"
+          name="Duration"
+          label="Duration in Minutes"
+          value={durationVal}
+          options={durationOptions}
+          onchange={handleDurationChange}>
+        </lightning-combobox>
+      </template>
+    </div>
+  </div>
+</template>

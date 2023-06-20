@@ -1,0 +1,17 @@
+.date {
+    padding-left: 0px;
+}
+
+.time {
+    padding-right: 0px;
+    margin-bottom: 2px;
+}
+
+.duration {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.calendar {
+    float: left;
+}

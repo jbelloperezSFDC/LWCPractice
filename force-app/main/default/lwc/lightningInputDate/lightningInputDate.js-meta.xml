@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Page</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage">
+            <property 
+                name="openHour" 
+                type="String" 
+                default="6:00 AM" 
+                datasource="6:00 AM, 7:00 AM, 8:00 AM, 9:00 AM, 10:00 AM" 
+                label="Open Time in ISO format"/>
+            <property 
+                name="closeHour" 
+                type="String" 
+                default="9:00 PM"
+                datasource="3:00 PM, 4:00 PM, 5:00 PM, 6:00 PM, 7:00 PM, 8:00 PM, 9:00 PM" 
+                label="Close Time in ISO format"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

@@ -1,0 +1,29 @@
+.date {
+    padding-left: 0px;
+}
+
+.chevron-down {
+  position: absolute;
+  right: 24px;
+  align-items: center;
+  bottom: 0px;
+  display: flex;
+  height: 34px;
+  z-index: 1;
+}
+
+.time {
+    padding-right: 0px;
+    margin-bottom: 2px;
+}
+
+.duration {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.calendar {
+    float: left;
+    position: absolute;
+    z-index: 99999;
+}
