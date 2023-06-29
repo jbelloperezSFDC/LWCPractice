@@ -44,7 +44,9 @@
                 for:item="todo">
                 <c-todo-item key={todo.todoId}
                     todo-id={todo.todoId}
-                    todo-name={todo.todoName}></c-todo-item>
+                    todo-name={todo.todoName}
+                    onupdate={updateHandler}
+                    ondelete={deleteHandler}></c-todo-item>
             </template>
             <div class="slds-var-m-top_large">COMPLETED TASKS</div>
             <template for:each={completedTask}
@@ -52,7 +54,9 @@
                 <c-todo-item key={todo.todoId}
                     todo-id={todo.todoId}
                     todo-name={todo.todoName}
-                    done={todo.done}></c-todo-item>
+                    done
+                    onupdate={updateHandler}
+                    ondelete={deleteHandler}></c-todo-item>
             </template>
         </lightning-layout-item>
     </lightning-layout>
